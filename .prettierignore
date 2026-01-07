@@ -1,0 +1,10 @@
+node_modules
+.vscode
+dist
+build
+images/
+fonts/
+*.lock
+package-lock.json
+npm-debug.log
+.DS_Store
