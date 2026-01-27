@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -39,248 +39,630 @@
     </div>
 
     <header
-      id="shopify-section-header header-style-one"
-      class="shopify-section"
-      style="
-        background: #000000;
-        box-shadow: 0 4px 55px #183a401f;
-        position: fixed;
-        left: 0;
-        right: 0;
-        top: 0;
-        z-index: 3;
-        transition: all ease-in-out 0.5s;
-      "
+      id="shopify-section-header"
+      class="shopify-section site-header header-style-one home-header header-style-two head-sticky"
     >
+      <link
+        rel="stylesheet"
+        href="//sprays-workdo.myshopify.com/cdn/shop/t/3/assets/component-loading-overlay.css?v=16694493214799988661737621832"
+        media="all"
+        onload="this.media = 'all'"
+      />
+      <script
+        src="//sprays-workdo.myshopify.com/cdn/shop/t/3/assets/details-disclosure.js?v=118626640824924522881737621832"
+        defer="defer"
+      ></script>
+      <script
+        src="//sprays-workdo.myshopify.com/cdn/shop/t/3/assets/details-modal.js?v=4511761896672669691737621832"
+        defer="defer"
+      ></script>
+
       <div class="announcebar">
-        <div class="container">
-          <div class="container">
-            <header class="d-flex justify-content-space-between py-3 border-bottom no-responsive">
-              <a
-                href="/"
-                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-              >
-                <svg class="bi me-2" width="40" height="32" aria-hidden="true">
-                  <use xlink:href="#bootstrap"></use>
-                </svg>
-                <span style="color: #ffffff; font-size: 15px; font-family: Outfit">
-                  <b>Monday - Friday 8:00 AM - 9:00 PM</b>
-                </span>
-              </a>
-              <ul class="nav nav-pills nav-bar">
-                <li>
-                  <button
-                    type="button"
-                    class="btn btn-primary dropdown-toggle nav-btn"
-                    style="font-family: Outfit; font-weight: 600"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
+        <div class="container-1">
+          <div class="announce-row row align-items-center">
+            <div class="annoucebar-left col-5 d-flex">
+              <p>
+                <b>Monday - Friday</b>
+                8:00 AM - 9:00 PM
+              </p>
+            </div>
+            <div class="announcebar-right col-7 d-flex justify-content-end">
+              <ul class="d-flex">
+                <li class="languages">
+                  <noscript>
+                    <form
+                      method="post"
+                      action="/localization"
+                      id="FooterLanguageFormNoScript"
+                      accept-charset="UTF-8"
+                      class="localization-form"
+                      enctype="multipart/form-data"
+                    >
+                      <input type="hidden" name="form_type" value="localization" />
+                      <input type="hidden" name="utf8" value="✓" />
+                      <input type="hidden" name="_method" value="put" />
+                      <input type="hidden" name="return_to" value="/" />
+                      <div class="localization-form__select">
+                        <h2 class="visually-hidden" id="FooterLanguageLabelNoScript">Language</h2>
+                        <select
+                          class="localization-selector link"
+                          name="locale_code"
+                          aria-labelledby="FooterLanguageLabelNoScript"
+                        >
+                          <option value="en" lang="en" selected>English</option>
+                          <option value="ar" lang="ar">العربية</option>
+                          <option value="de" lang="de">Deutsch</option>
+                          <option value="es" lang="es">Español</option>
+                        </select>
+                      </div>
+                      <button class="button button--tertiary">Update language</button>
+                    </form>
+                  </noscript>
+
+                  <localization-form>
+                    <form
+                      method="post"
+                      action="/localization"
+                      id="FooterLanguageForm"
+                      accept-charset="UTF-8"
+                      class="localization-form"
+                      enctype="multipart/form-data"
+                    >
+                      <input type="hidden" name="form_type" value="localization" />
+                      <input type="hidden" name="utf8" value="✓" />
+                      <input type="hidden" name="_method" value="put" />
+                      <input type="hidden" name="return_to" value="/" />
+                      <div class="no-js-hidden">
+                        <div class="lang-dropdown">
+                          <button
+                            type="button"
+                            class="disclosure__button localization-form__select localization-selector d-flex nice-select"
+                            aria-expanded="false"
+                            aria-controls="FooterLanguageList"
+                            aria-describedby="FooterLanguageLabel"
+                          >
+                            <img
+                              src="//sprays-workdo.myshopify.com/cdn/shop/files/en.svg?v=1124470684023176590"
+                              width="18"
+                              height="14"
+                              alt=""
+                            />
+
+                            English
+                          </button>
+                          <div class="disclosure__list-wrapper hide">
+                            <ul
+                              id="FooterLanguageList"
+                              role="list"
+                              class="disclosure__list list-unstyled"
+                            >
+                              <li class="disclosure__item" tabindex="-1">
+                                <a
+                                  class="link link--text disclosure__link caption-large disclosure__link--active focus-inset"
+                                  href="#"
+                                  hreflang="en"
+                                  lang="en"
+                                  aria-current="true"
+                                  data-value="en"
+                                >
+                                  <img
+                                    src="//sprays-workdo.myshopify.com/cdn/shop/files/en.svg?v=1124470684023176590"
+                                    class="mr5"
+                                    width="18"
+                                    height="14"
+                                    alt="English"
+                                  />
+
+                                  English
+                                </a>
+                              </li>
+                              <li class="disclosure__item" tabindex="-1">
+                                <a
+                                  class="link link--text disclosure__link caption-large focus-inset"
+                                  href="#"
+                                  hreflang="ar"
+                                  lang="ar"
+                                  data-value="ar"
+                                >
+                                  <img
+                                    src="//sprays-workdo.myshopify.com/cdn/shop/files/ar.svg?v=3666672789038200558"
+                                    class="mr5"
+                                    width="18"
+                                    height="14"
+                                    alt="العربية"
+                                  />
+
+                                  العربية
+                                </a>
+                              </li>
+                              <li class="disclosure__item" tabindex="-1">
+                                <a
+                                  class="link link--text disclosure__link caption-large focus-inset"
+                                  href="#"
+                                  hreflang="de"
+                                  lang="de"
+                                  data-value="de"
+                                >
+                                  <img
+                                    src="//sprays-workdo.myshopify.com/cdn/shop/files/de.svg?v=4026187038083143168"
+                                    class="mr5"
+                                    width="18"
+                                    height="14"
+                                    alt="Deutsch"
+                                  />
+
+                                  Deutsch
+                                </a>
+                              </li>
+                              <li class="disclosure__item" tabindex="-1">
+                                <a
+                                  class="link link--text disclosure__link caption-large focus-inset"
+                                  href="#"
+                                  hreflang="es"
+                                  lang="es"
+                                  data-value="es"
+                                >
+                                  <img
+                                    src="//sprays-workdo.myshopify.com/cdn/shop/files/es.svg?v=10917616493623772375"
+                                    class="mr5"
+                                    width="18"
+                                    height="14"
+                                    alt="Español"
+                                  />
+
+                                  Español
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <input type="hidden" name="locale_code" value="en" />
+                      </div>
+                    </form>
+                  </localization-form>
+                </li>
+                <li class="currency">
+                  <form
+                    method="post"
+                    action="/localization"
+                    id="currencyForm"
+                    accept-charset="UTF-8"
+                    class="selectors-form"
+                    enctype="multipart/form-data"
                   >
-                    <img src="images/en.svg" alt="English" width="18" height="14" />
-                    English
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="#">
+                    <input type="hidden" name="form_type" value="localization" />
+                    <input type="hidden" name="utf8" value="✓" />
+                    <input type="hidden" name="_method" value="put" />
+                    <input type="hidden" name="return_to" value="/" />
+                    <select name="currency" class="list" style="display: none">
+                      <option>AUD</option>
+
+                      <option>CAD</option>
+
+                      <option>USD</option>
+                    </select>
+                    <div class="nice-select" tabindex="0">
+                      <span class="current nice-select-arrow">
                         <img
-                          src="images/usd.svg"
-                          alt="English"
-                          class="mr5"
+                          src="//sprays-workdo.myshopify.com/cdn/shop/files/usd.svg?v=5981829788044056821"
                           width="18"
                           height="14"
+                          alt="USD"
                         />
-                        English
-                      </a>
-                    </li>
 
-                    <li>
-                      <a href="#">
-                        <img src="images/ar.svg" alt="العربي" class="mr5" width="18" height="14" />
-                        العربي
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="images/de.svg" alt="Deutsch" class="mr5" width="18" height="14" />
-                        Deutsch
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="images/es.svg" alt="Español" class="mr5" width="18" height="14" />
-                        Español
-                      </a>
-                    </li>
-                  </ul>
+                        USD
+                      </span>
+
+                      <ul class="list">
+                        <li data-currency="AUD" class="option">
+                          <img
+                            src="//sprays-workdo.myshopify.com/cdn/shop/files/aud.svg?v=1064554604162307115"
+                            width="18"
+                            height="14"
+                            alt="AUD"
+                          />
+
+                          AUD $
+                        </li>
+
+                        <li data-currency="CAD" class="option">
+                          <img
+                            src="//sprays-workdo.myshopify.com/cdn/shop/files/cad.svg?v=12805041793335945850"
+                            width="18"
+                            height="14"
+                            alt="CAD"
+                          />
+
+                          CAD $
+                        </li>
+
+                        <li data-currency="USD" class="option selected focus">
+                          <img
+                            src="//sprays-workdo.myshopify.com/cdn/shop/files/usd.svg?v=5981829788044056821"
+                            width="18"
+                            height="14"
+                            alt="USD"
+                          />
+
+                          USD $
+                        </li>
+                      </ul>
+                    </div>
+                  </form>
                 </li>
+
+                <li><a href="/pages/faqs" class="active">Faq</a></li>
+                <li><a href="/pages/about-us">About Us</a></li>
               </ul>
-              <ul class="nav nav-pills nav-bar">
-                <li>
-                  <button
-                    type="button"
-                    class="btn btn-primary dropdown-toggle nav-btn"
-                    style="font-family: Outfit; font-weight: 600"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <img src="images/usd.svg" alt width="18" height="14" />
-                    USD
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-item">
-                      <a href="#">
-                        <img src="images/aud.svg" alt="AUD" width="18" height="14" />
-                        AUD $
-                      </a>
-                    </li>
-
-                    <li class="dropdown-item">
-                      <a href="#">
-                        <img src="images/cad.svg" alt="CAD" width="18" height="14" />
-                        CAD $
-                      </a>
-                    </li>
-                    <li class="dropdown-item">
-                      <a href="#">
-                        <img src="images/usd.svg" alt="USD" width="18" height="14" />
-                        USD $
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-
-                <li class="nav-item">
-                  <a
-                    href="faqs.html"
-                    class="nav-link"
-                    style="color: #ffffff; font-family: Outfit; font-weight: 600"
-                  >
-                    Faq
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    href="aboutUs.html"
-                    class="nav-link"
-                    style="color: #ffffff; font-family: Outfit; font-weight: 600"
-                  >
-                    About us
-                  </a>
-                </li>
-              </ul>
-            </header>
+            </div>
           </div>
         </div>
       </div>
       <div class="main-navigationbar">
-        <div class="container">
-          <div class="container">
-            <header class="p-3">
-              <div class="container">
-                <div
-                  class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
-                >
-                  <a
-                    href="/"
-                    class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
-                  >
-                    <svg class="bi me-0" width="40" height="32" role="img" aria-label="Bootstrap">
-                      <use xlink:href="#bootstrap"></use>
-                    </svg>
-                    <img src="images/sprays_-2_100x.webp" alt="" />
-                  </a>
-                  <div class="menu-items-col">
-                    <ul
-                      id="megalevel-1"
-                      class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center align-items-flex-start mb-md-0 main-nav"
-                    >
-                      <li class="menu-lnk has-item">
-                        <a href="#" class="nav-link px-2 text-white">
-                          All categories
-                          <i class="ri-arrow-drop-down-line"></i>
-                        </a>
-                      </li>
+        <div class="container-1">
+          <div class="navigationbar-row d-flex align-items-center">
+            <div class="logo-col">
+              <h1>
+                <a href="/">
+                  <img
+                    src="//sprays-workdo.myshopify.com/cdn/shop/files/sprays_-2_100x.png?v=1700128236"
+                    loading="lazy"
+                    alt="Sprays WorkDo"
+                  />
+                </a>
+              </h1>
+            </div>
+            <div class="menu-items-col">
+              <ul id="megalevel-1" class="main-nav">
+                <li class="menu-lnk has-item">
+                  <a class=" " href="#">All categories</a>
 
-                      <li>
-                        <a href="#" class="nav-link px-2 text-white">
-                          Pages
-                          <i class="ri-arrow-drop-down-line"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" class="nav-link px-2 text-white">
-                          Collection
-                          <i class="ri-arrow-drop-down-line"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" class="nav-link px-2 text-white">
-                          Blog
-                          <i class="ri-arrow-drop-down-line"></i>
-                        </a>
-                      </li>
-                    </ul>
-                    <ul class="menu-right d-flex justify-content-end align-items-center mb-0">
-                      <li class="account-header dropdown">
-                        <a href="#" class="hmuser">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="22"
-                            viewBox="0 0 16 22"
-                            fill="none"
+                  <div class="mega-menu menu-dropdown">
+                    <div class="mega-menu-container container-1">
+                      <ul class="row" id="menu_beb849d2-5573-4601-82f8-dfb6bad54169">
+                        <li class="col-md-3 col-12">
+                          <ul
+                            class="megamenu-list arrow-list"
+                            id="menu_beb849d2-5573-4601-82f8-dfb6bad54169-1"
                           >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M13.3699 21.0448H4.60183C4.11758 21.0448 3.72502 20.6522 3.72502 20.168C3.72502 19.6837 4.11758 19.2912 4.60183 19.2912H13.3699C13.8542 19.2912 14.2468 18.8986 14.2468 18.4143V14.7756C14.2026 14.2836 13.9075 13.8492 13.4664 13.627C10.0296 12.2394 6.18853 12.2394 2.75176 13.627C2.31062 13.8492 2.01554 14.2836 1.9714 14.7756V20.168C1.9714 20.6522 1.57883 21.0448 1.09459 21.0448C0.610335 21.0448 0.217773 20.6522 0.217773 20.168V14.7756C0.256548 13.5653 0.986136 12.4845 2.09415 11.9961C5.95255 10.4369 10.2656 10.4369 14.124 11.9961C15.232 12.4845 15.9616 13.5653 16.0004 14.7756V18.4143C16.0004 19.8671 14.8227 21.0448 13.3699 21.0448ZM12.493 4.38406C12.493 1.96281 10.5302 0 8.10892 0C5.68767 0 3.72486 1.96281 3.72486 4.38406C3.72486 6.80531 5.68767 8.76812 8.10892 8.76812C10.5302 8.76812 12.493 6.80531 12.493 4.38406ZM10.7393 4.38483C10.7393 5.83758 9.56159 7.01526 8.10884 7.01526C6.6561 7.01526 5.47841 5.83758 5.47841 4.38483C5.47841 2.93208 6.6561 1.75439 8.10884 1.75439C9.56159 1.75439 10.7393 2.93208 10.7393 4.38483Z"
-                              fill="#183A40"
-                            ></path>
-                          </svg>
-                        </a>
-                      </li>
+                            <li class="list-title"><span>Universal Fragrances</span></li>
 
-                      <li class="cart-header">
-                        <div class="main-cart collscart">
-                          <a
-                            href=""
-                            class="hcart"
-                            type="button"
-                            data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasRight"
-                            aria-controls="offcanvasRight"
+                            <li>
+                              <a href="/products/cassili-eau-de-parfum">Cassili Eau De Parfum</a>
+                            </li>
+
+                            <li>
+                              <a href="/products/delina-la-rosee-eau-de-parfum">
+                                Delina La Rosee Eau De Parfum
+                              </a>
+                            </li>
+
+                            <li>
+                              <a href="/products/delina-eau-de-parfum">Delina Eau De Parfum</a>
+                            </li>
+
+                            <li>
+                              <a href="/products/pegasus-eau-de-parfum">Pegasus Eau De Parfum</a>
+                            </li>
+
+                            <li>
+                              <a href="/products/oriana-eau-de-parfum">Oriana Eau De Parfum</a>
+                            </li>
+                          </ul>
+                        </li>
+
+                        <li class="col-md-3 col-12">
+                          <ul
+                            class="megamenu-list arrow-list"
+                            id="menu_beb849d2-5573-4601-82f8-dfb6bad54169-2"
                           >
-                            <div>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="19"
-                                height="17"
-                                viewBox="0 0 19 17"
-                                fill="none"
-                              >
-                                <path
-                                  fill-rule="evenodd"
-                                  clip-rule="evenodd"
-                                  d="M15.5698 10.627H6.97178C5.80842 10.6273 4.81015 9.79822 4.59686 8.65459L3.47784 2.59252C3.40702 2.20522 3.06646 1.92595 2.67278 1.93238H0.805055C0.360435 1.93238 0 1.57194 0 1.12732C0 0.682701 0.360435 0.322266 0.805055 0.322266H2.68888C3.85224 0.321937 4.85051 1.15101 5.0638 2.29465L6.18282 8.35672C6.25364 8.74402 6.5942 9.02328 6.98788 9.01686H15.5778C15.9715 9.02328 16.3121 8.74402 16.3829 8.35672L17.3972 2.88234C17.4407 2.64509 17.3755 2.40085 17.2195 2.21684C17.0636 2.03283 16.8334 1.92843 16.5922 1.93238H7.2455C6.80088 1.93238 6.44044 1.57194 6.44044 1.12732C6.44044 0.682701 6.80088 0.322266 7.2455 0.322266H16.5841C17.3023 0.322063 17.9833 0.641494 18.4423 1.19385C18.9013 1.74622 19.0907 2.4742 18.959 3.18021L17.9447 8.65459C17.7314 9.79822 16.7331 10.6273 15.5698 10.627ZM10.466 13.8478C10.466 12.5139 9.38464 11.4326 8.05079 11.4326C7.60617 11.4326 7.24573 11.7931 7.24573 12.2377C7.24573 12.6823 7.60617 13.0427 8.05079 13.0427C8.49541 13.0427 8.85584 13.4032 8.85584 13.8478C8.85584 14.2924 8.49541 14.6528 8.05079 14.6528C7.60617 14.6528 7.24573 14.2924 7.24573 13.8478C7.24573 13.4032 6.88529 13.0427 6.44068 13.0427C5.99606 13.0427 5.63562 13.4032 5.63562 13.8478C5.63562 15.1816 6.71693 16.2629 8.05079 16.2629C9.38464 16.2629 10.466 15.1816 10.466 13.8478ZM15.2963 15.4579C15.2963 15.0133 14.9358 14.6528 14.4912 14.6528C14.0466 14.6528 13.6862 14.2924 13.6862 13.8478C13.6862 13.4032 14.0466 13.0427 14.4912 13.0427C14.9358 13.0427 15.2963 13.4032 15.2963 13.8478C15.2963 14.2924 15.6567 14.6528 16.1013 14.6528C16.5459 14.6528 16.9064 14.2924 16.9064 13.8478C16.9064 12.5139 15.8251 11.4326 14.4912 11.4326C13.1574 11.4326 12.076 12.5139 12.076 13.8478C12.076 15.1816 13.1574 16.2629 14.4912 16.2629C14.9358 16.2629 15.2963 15.9025 15.2963 15.4579Z"
-                                  fill="white"
-                                ></path>
-                              </svg>
-                            </div>
-                            <span class="icon-lable">$0.00</span>
+                            <li class="list-title"><span>Signature Perfumes</span></li>
+
+                            <li>
+                              <a href="/products/althair-eau-de-parfum">Althair Eau De Parfum</a>
+                            </li>
+
+                            <li>
+                              <a href="/products/carlisle-eau-de-parfum">Carlisle Eau De Parfum</a>
+                            </li>
+
+                            <li>
+                              <a href="/products/greenley-eau-de-parfum">Greenley Eau De Parfum</a>
+                            </li>
+
+                            <li>
+                              <a href="/products/herod-eau-de-parfum">Herod Eau De parfum</a>
+                            </li>
+                          </ul>
+                        </li>
+
+                        <li class="col-md-3 col-12">
+                          <ul
+                            class="megamenu-list arrow-list"
+                            id="menu_beb849d2-5573-4601-82f8-dfb6bad54169-3"
+                          >
+                            <li class="list-title"><span>Unisex Perfume</span></li>
+
+                            <li>
+                              <a href="/products/cologne-arabic-air">Cologne Arabic Air</a>
+                            </li>
+
+                            <li>
+                              <a href="/products/cologne-gripped-rose">Cologne Gripped Rose</a>
+                            </li>
+
+                            <li>
+                              <a href="/products/cologne-sapphire-sea">Cologne Sapphire Sea</a>
+                            </li>
+
+                            <li>
+                              <a href="/products/cologne-to-the-races">Cologne To The Races</a>
+                            </li>
+                          </ul>
+                        </li>
+
+                        <li class="col-md-3 col-12">
+                          <a href="">
+                            <img
+                              loading="lazy"
+                              src="//sprays-workdo.myshopify.com/cdn/shop/files/product-img-1.png?v=1700128395"
+                              alt="menubaner"
+                            />
                           </a>
-                        </div>
-                      </li>
-                    </ul>
-                    <div class="mobile-menu mobile-only">
-                      <i class="ri-menu-line"></i>
+                        </li>
+                      </ul>
                     </div>
                   </div>
-                </div>
+                </li>
+
+                <li class="menu-lnk has-item">
+                  <a class=" " href="#">Pages</a>
+
+                  <div class="menu-dropdown">
+                    <ul id="menu_8609f05f-66ba-4d78-bdca-ccc720e4c45a">
+                      <li class="">
+                        <a href="/pages/contact">Contact</a>
+                      </li>
+
+                      <li class="">
+                        <a href="/pages/about-us">About us</a>
+                      </li>
+
+                      <li class="">
+                        <a href="/pages/faqs">Faqs</a>
+                      </li>
+
+                      <li class="">
+                        <a href="/pages/privacy-policy">privacy policy</a>
+                      </li>
+
+                      <li class="">
+                        <a href="/pages/shipping-policy">Shipping &amp; Policy</a>
+                      </li>
+
+                      <li class="">
+                        <a href="/pages/terms-conditions">Terms &amp; Conditions</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="menu-lnk has-item">
+                  <a class="active" href="">Collections</a>
+
+                  <div class="mega-menu menu-dropdown">
+                    <div class="mega-menu-container container">
+                      <div class="row justify-center">
+                        <div class="col-md-3 col-12">
+                          <div class="megamenu-card">
+                            <div class="megamenu-card-inner">
+                              <div class="megamenu-image">
+                                <a
+                                  href="/collections/signature-perfumes"
+                                  class="img-ratio"
+                                  tabindex="0"
+                                >
+                                  <img
+                                    src="//sprays-workdo.myshopify.com/cdn/shop/files/bottle-that-has-word-message-it_1.jpg?v=1737625387"
+                                    alt="megamenu-image"
+                                    loading="lazy"
+                                  />
+                                </a>
+                              </div>
+                              <div class="megamenu-content">
+                                <a tabindex="0">Signature Perfumes</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-12">
+                          <div class="megamenu-card">
+                            <div class="megamenu-card-inner">
+                              <div class="megamenu-image">
+                                <a
+                                  href="/collections/unisex-perfume"
+                                  class="img-ratio"
+                                  tabindex="0"
+                                >
+                                  <img
+                                    src="//sprays-workdo.myshopify.com/cdn/shop/files/aloe-vera-leaves-with-beauty-cream-bottle_1.jpg?v=1737625387"
+                                    alt="megamenu-image"
+                                    loading="lazy"
+                                  />
+                                </a>
+                              </div>
+                              <div class="megamenu-content">
+                                <a tabindex="0">Unisex Perfume</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-12">
+                          <div class="megamenu-card">
+                            <div class="megamenu-card-inner">
+                              <div class="megamenu-image">
+                                <a
+                                  href="/collections/men-s-fragrances"
+                                  class="img-ratio"
+                                  tabindex="0"
+                                >
+                                  <img
+                                    src="//sprays-workdo.myshopify.com/cdn/shop/files/skin-care-product-grass_1.jpg?v=1737625387"
+                                    alt="megamenu-image"
+                                    loading="lazy"
+                                  />
+                                </a>
+                              </div>
+                              <div class="megamenu-content">
+                                <a tabindex="0">Men’s Fragrances</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-12">
+                          <div class="megamenu-card">
+                            <div class="megamenu-card-inner">
+                              <div class="megamenu-image">
+                                <a
+                                  href="/collections/universal-fragrances"
+                                  class="img-ratio"
+                                  tabindex="0"
+                                >
+                                  <img
+                                    src="//sprays-workdo.myshopify.com/cdn/shop/files/front-view-argan-product-assortment_1.jpg?v=1737625387"
+                                    alt="megamenu-image"
+                                    loading="lazy"
+                                  />
+                                </a>
+                              </div>
+                              <div class="megamenu-content">
+                                <a tabindex="0">Universal Fragrances</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="menu-lnk has-item">
+                  <a class="active" href="">Blog</a>
+
+                  <div class="menu-dropdown">
+                    <ul id="menu_f628bf9c-b00b-446a-99c7-86d7c682c4b0">
+                      <li class="">
+                        <a href="/blogs/news">Blog page</a>
+                      </li>
+
+                      <li class="">
+                        <a href="/blogs/news/aromatics-anonymous">Article page</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <ul class="menu-right d-flex justify-content-end align-items-center">
+                <li class="account-header dropdown">
+                  <a class="hmuser" data-toggle="dropdown" tabindex="0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="22"
+                      viewBox="0 0 16 22"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M13.3699 21.0448H4.60183C4.11758 21.0448 3.72502 20.6522 3.72502 20.168C3.72502 19.6837 4.11758 19.2912 4.60183 19.2912H13.3699C13.8542 19.2912 14.2468 18.8986 14.2468 18.4143V14.7756C14.2026 14.2836 13.9075 13.8492 13.4664 13.627C10.0296 12.2394 6.18853 12.2394 2.75176 13.627C2.31062 13.8492 2.01554 14.2836 1.9714 14.7756V20.168C1.9714 20.6522 1.57883 21.0448 1.09459 21.0448C0.610335 21.0448 0.217773 20.6522 0.217773 20.168V14.7756C0.256548 13.5653 0.986136 12.4845 2.09415 11.9961C5.95255 10.4369 10.2656 10.4369 14.124 11.9961C15.232 12.4845 15.9616 13.5653 16.0004 14.7756V18.4143C16.0004 19.8671 14.8227 21.0448 13.3699 21.0448ZM12.493 4.38406C12.493 1.96281 10.5302 0 8.10892 0C5.68767 0 3.72486 1.96281 3.72486 4.38406C3.72486 6.80531 5.68767 8.76812 8.10892 8.76812C10.5302 8.76812 12.493 6.80531 12.493 4.38406ZM10.7393 4.38483C10.7393 5.83758 9.56159 7.01526 8.10884 7.01526C6.6561 7.01526 5.47841 5.83758 5.47841 4.38483C5.47841 2.93208 6.6561 1.75439 8.10884 1.75439C9.56159 1.75439 10.7393 2.93208 10.7393 4.38483Z"
+                        fill="#183A40"
+                      ></path>
+                    </svg>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" tabindex="-1">
+                    <div class="header-panel-top">
+                      <div class="customer_account text-left">
+                        <ul>
+                          <li><a href="/account/login">Log in</a></li>
+                          <li>
+                            <a href="/account/register" title="Create Account">Create Account</a>
+                          </li>
+
+                          <li class="headwish">
+                            <a href="/pages/wishlist">Wishlist</a>
+                          </li>
+
+                          <li class="headcomp compare-header">
+                            <a href="/pages/compare" class="compare">Compare</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="cart-header">
+                  <div class="main-cart collscart" tabindex="0">
+                    <a class="hcart">
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="19"
+                          height="17"
+                          viewBox="0 0 19 17"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M15.5698 10.627H6.97178C5.80842 10.6273 4.81015 9.79822 4.59686 8.65459L3.47784 2.59252C3.40702 2.20522 3.06646 1.92595 2.67278 1.93238H0.805055C0.360435 1.93238 0 1.57194 0 1.12732C0 0.682701 0.360435 0.322266 0.805055 0.322266H2.68888C3.85224 0.321937 4.85051 1.15101 5.0638 2.29465L6.18282 8.35672C6.25364 8.74402 6.5942 9.02328 6.98788 9.01686H15.5778C15.9715 9.02328 16.3121 8.74402 16.3829 8.35672L17.3972 2.88234C17.4407 2.64509 17.3755 2.40085 17.2195 2.21684C17.0636 2.03283 16.8334 1.92843 16.5922 1.93238H7.2455C6.80088 1.93238 6.44044 1.57194 6.44044 1.12732C6.44044 0.682701 6.80088 0.322266 7.2455 0.322266H16.5841C17.3023 0.322063 17.9833 0.641494 18.4423 1.19385C18.9013 1.74622 19.0907 2.4742 18.959 3.18021L17.9447 8.65459C17.7314 9.79822 16.7331 10.6273 15.5698 10.627ZM10.466 13.8478C10.466 12.5139 9.38464 11.4326 8.05079 11.4326C7.60617 11.4326 7.24573 11.7931 7.24573 12.2377C7.24573 12.6823 7.60617 13.0427 8.05079 13.0427C8.49541 13.0427 8.85584 13.4032 8.85584 13.8478C8.85584 14.2924 8.49541 14.6528 8.05079 14.6528C7.60617 14.6528 7.24573 14.2924 7.24573 13.8478C7.24573 13.4032 6.88529 13.0427 6.44068 13.0427C5.99606 13.0427 5.63562 13.4032 5.63562 13.8478C5.63562 15.1816 6.71693 16.2629 8.05079 16.2629C9.38464 16.2629 10.466 15.1816 10.466 13.8478ZM15.2963 15.4579C15.2963 15.0133 14.9358 14.6528 14.4912 14.6528C14.0466 14.6528 13.6862 14.2924 13.6862 13.8478C13.6862 13.4032 14.0466 13.0427 14.4912 13.0427C14.9358 13.0427 15.2963 13.4032 15.2963 13.8478C15.2963 14.2924 15.6567 14.6528 16.1013 14.6528C16.5459 14.6528 16.9064 14.2924 16.9064 13.8478C16.9064 12.5139 15.8251 11.4326 14.4912 11.4326C13.1574 11.4326 12.076 12.5139 12.076 13.8478C12.076 15.1816 13.1574 16.2629 14.4912 16.2629C14.9358 16.2629 15.2963 15.9025 15.2963 15.4579Z"
+                            fill="white"
+                          ></path>
+                        </svg>
+                      </div>
+                      <span class="icon-lable">$0.00</span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+              <div class="mobile-menu mobile-only">
+                <button class="mobile-menu-button" id="menu">
+                  <div class="one"></div>
+                  <div class="two"></div>
+                  <div class="three"></div>
+                </button>
               </div>
-            </header>
+            </div>
           </div>
         </div>
       </div>
+
+      <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "name": "Sprays WorkDo",
+
+          "logo": "https:\/\/sprays-workdo.myshopify.com\/cdn\/shop\/files\/sprays_-2_187x.png?v=1700128236"
+        }
+      </script>
+      <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "WebSite",
+          "name": "Sprays WorkDo",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https:\/\/sprays-workdo.myshopify.com\/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          },
+          "url": "https:\/\/sprays-workdo.myshopify.com"
+        }
+      </script>
     </header>
 
     <main
@@ -294,7 +676,7 @@
         <section
           class="home-section padding-top padding-bottum"
           style="
-            background-image: url('https://sprays-workdo.myshopify.com/cdn/shop/files/home-bg.png?v=1700128841');
+            background-image: url(&quot;https://sprays-workdo.myshopify.com/cdn/shop/files/home-bg.png?v=1700128841&quot;);
           "
         >
           <div class="container-1">
@@ -405,7 +787,14 @@
                             title="YouTube video player"
                             src="https://www.youtube.com/embed/WhKJl9W_1Fw?autoplay"
                             frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allow="
+                              accelerometer;
+                              autoplay;
+                              clipboard-write;
+                              encrypted-media;
+                              gyroscope;
+                              picture-in-picture;
+                            "
                             allowfullscreen=""
                           ></iframe>
                         </div>
@@ -7480,7 +7869,7 @@
         <section
           class="video-sec"
           style="
-            background-image: url('https://sprays-workdo.myshopify.com/cdn/shop/files/bg2.png?v=1700132466');
+            background-image: url(&quot;https://sprays-workdo.myshopify.com/cdn/shop/files/bg2.png?v=1700132466&quot;);
           "
         >
           <div class="container-1">
@@ -7559,7 +7948,14 @@
                       title="YouTube video player"
                       src="https://www.youtube.com/embed/WhKJl9W_1Fw?enablejsapi=1&amp;controls=0&amp;fs=0&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0&amp;loop=1&amp;playlist=WhKJl9W_1Fw&amp;playsinline=1&amp;modestbranding=1&amp;branding=0&amp;autohide=0&amp;cc_load_policy=0&amp;wmode=opaque"
                       frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allow="
+                        accelerometer;
+                        autoplay;
+                        clipboard-write;
+                        encrypted-media;
+                        gyroscope;
+                        picture-in-picture;
+                      "
                       allowfullscreen=""
                     ></iframe>
                   </div>
@@ -23311,7 +23707,9 @@
               </div>
               <div></div>
               <div class="mini-cart-bottom d-flex">
-                <a href="viewcartpage.html" class="view-cart-btn cart-bottom-btn" form="cart">View Cart</a>
+                <a href="viewcartpage.html" class="view-cart-btn cart-bottom-btn" form="cart">
+                  View Cart
+                </a>
                 <button
                   type="submit"
                   id="checkout"
@@ -23327,7 +23725,7 @@
         </div>
       </div>
     </div>
-    
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const loader = document.querySelector(".ttloader");
